@@ -4,19 +4,18 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 function Search() {
   return (
-    <div className="flex items-center space-x-4">
-      <input
+    <div className="search bg-green my-5 ml-10 pl-10 sm:pl-5">
+        
+        <input
         type="text"
         placeholder="Search..."
-        className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
-        
-      />
-      <button
-        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none"
-        
-      >
-      <FontAwesomeIcon icon={faSearch } />
-      </button>
+        className="pl-10 pr-4 w-3/4 py-2  border  rounded-2xl focus:outline-none focus:border-blue-500 bg-backg"
+        />
+        <FontAwesomeIcon
+            icon={faSearch}
+            className="absolute left-2/3 pt-3  text-red"
+        />
+      
     </div>
   )
 }
