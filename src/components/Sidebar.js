@@ -1,71 +1,40 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+
 
 function Sidebar() {
   return (
-    <div>
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="col-sm-3 col-md-3">
-        <nav id="sidebar">
-    
-                    <div class="sidebar-header">
-                        <h3>Bootstrap Sidebar</h3>
-                    </div>
-    
-                    <ul class="list-unstyled components">
-                        <p>Dummy Heading</p>
-                        <li class="active">
-                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                            <ul class="collapse list-unstyled" id="homeSubmenu">
-                                <li><a href="#">Home 1</a></li>
-                                <li class="active"><a href="#">Home 2</a></li>
-                                <li><a href="#">Home 3</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                            <ul class="collapse list-unstyled" id="pageSubmenu">
-                                <li><a href="#">Page 1</a></li>
-                                <li><a href="#">Page 2</a></li>
-                                <li><a href="#">Page 3</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-    
-                    
-                </nav>
-    
+    <>
+      <div className='sidebar-container ml-8 mr-5 pl-5 pr-5 pb-5 mb-5'>
+        <h1 >Filters</h1>
+        <div className='flex flex-col'>
+          <div className='siderbar-headers flex gap-20 pl-0'>
+            <h2 className='pl-0'>BRAND</h2>
+            <FontAwesomeIcon icon={faAngleUp} className='p-5 '/>
+          </div>
+          
+          <section className='flex flex-col relative '>
+            <div className='flex gap-1 '>
+            <label >
+              <input type='checkbox' className='mr-1'></input>
+              METHON</label>
+            </div>
+            <div className='flex gap-1'>
+            <label className=''>
+              <input type='checkbox' className='mr-1'></input>
+              WOMEN</label>
+            </div>
+            <div className='flex gap-1'>
+            <label >
+              <input type='checkbox' className='mr-1'></input>
+              UNISEX
+              </label>
+            </div>
+          </section>
+        </div>
       </div>
-      <div class="col-sm-9 col-md-9">
-     
-    
-                    <nav class="navbar navbar-default">
-                        <div class="container-fluid">
-    
-                            <div class="navbar-header">
-                              <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn active">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-    
-                            
-                        </div>
-                    </nav>
-    
-      
-    
-      </div>
-    </div>
-    </div>
+    </>
   )
 }
 

@@ -8,3 +8,36 @@
     color: #8B499F;
     
 }
+
+/* SIDEBAR */
+
+.sidebar-container{
+
+    background-color: aqua;
+    width:max-content;
+    height: max-content;
+    
+    
+}
+input[type=checkbox] {
+    
+    border:6px solid #8B499F;
+    
+}
+label{
+    color: #f1f1f1;
+    font-weight: 600;
+}
+.siderbar-headers h2{
+    color: #f1f1f1;
+    font-weight: bolder;
+}
+.siderbar-headers{
+    color: #f1f1f1;
+}
+
+.sidebar-container h1{
+    color: #f1f1f1;
+    font-size: 28px;
+    font-weight: bolder;
+}
