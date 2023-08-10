@@ -11,9 +11,11 @@ function App() {
     <Router>
       <div className="bg-backg min-h-screen">
         <Routes>
-        <Route path='/' element={<Categories />} />
           <Route path='/' element={<AboutUs />} />
-          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/categories' element={<Categories />} />
+          
+          
           
         </Routes>
       </div>
