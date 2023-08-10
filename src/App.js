@@ -11,8 +11,8 @@ function App() {
     <Router>
       <div className="bg-backg min-h-screen">
         <Routes>
-          <Route path='/' element={<AboutUs />} />
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<AboutUs />} />
           <Route path='/categories' element={<Categories />} />
           
           
