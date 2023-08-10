@@ -20,7 +20,7 @@ function Sidebar() {
   };
   return (
     <>
-      <div className='sidebar-container ml-8 mr-5 pl-5 pr-5 pb-5 mb-5'>
+      <div className='sidebar-container ml-8  pl-5 pr-5 pb-5 mb-5'>
         <h1 >Filters</h1>
         <div className='flex flex-col'>
           <div className='siderbar-headers flex gap-20 pl-0' onClick={toggleBrandSection}>

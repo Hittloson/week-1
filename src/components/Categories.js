@@ -8,12 +8,21 @@ import CategoriesStyle from './CategoriesStyle.css'
 function Categories() {
   return (
     <>
-        <div>
+        <>
             <Navbar />
             <Search/>
-            <Sidebar />
-            <Cards />
-        </div>
+            <div className='flex'>
+              <Sidebar />
+              <Cards 
+                imgSrc={"#"} 
+                imgAlt={"Card Image"}
+                title={"Card Title"} 
+                description={"This is the card description. You can add more to it joor"}
+                buttonText={"Learn more"}
+                link={"CardPage"}
+              />
+            </div>
+        </>
     </>
   )
 }
