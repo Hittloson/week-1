@@ -10,7 +10,7 @@ function ProgressBar() {
     setProgress(stepWidth * (index + 1));
   };
   return (
-    <div>
+    <div className='progressBae-container'>
         <div className="steps">
         {steps.map((step, index) => (
             <div key={index} className="step" onClick={() => handleClick(index)}>
@@ -18,7 +18,7 @@ function ProgressBar() {
         </div>
         ))}
         </div>
-        <div className="progress-container mt-4">
+        <div className="progress-container mt-1">
             <div className="progress" style={{ width: `${progress}%` }}></div>
         </div>
     </div>

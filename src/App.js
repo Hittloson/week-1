@@ -8,8 +8,11 @@ import Categories from './components/Categories';
 
 function App() {
   return (
+    
     <Router>
+    
       <div className="bg-backg min-h-screen">
+      
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<AboutUs />} />
