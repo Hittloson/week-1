@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color:#E5D8EA;
+    ;
+    margin-bottom: 10px;
+    border-radius: 10rem;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color:#8B499F;
+    border-radius: 10rem;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E5D8EA;
+  }
+  
+  .step {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+  }
