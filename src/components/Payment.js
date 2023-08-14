@@ -1,8 +1,11 @@
 import React from 'react'
+import PaymentMethod from './PaymentMethod'
 
 function Payment() {
   return (
-    <div>Payment</div>
+    <div>
+      <PaymentMethod/>
+    </div>
   )
 }
 

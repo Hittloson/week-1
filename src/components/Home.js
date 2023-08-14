@@ -10,11 +10,11 @@ import Confirmation from './Confirmation'
 function Home() {
   
   return (
-    <div>
+    <div className='pb-6'>
       <Navbar />
       <ProgressBar/>
-      <Information/>
-      <Payment/>
+      
+      
       <Confirmation/>
     </div>
   )

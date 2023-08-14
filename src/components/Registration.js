@@ -1,7 +1,6 @@
 import React from 'react'
 import FormStyle from './FormStyle.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft,faAnglesRight } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function Registration() {
@@ -13,19 +12,19 @@ function Registration() {
             </div>
             <div className='form-details flex flex-col'>
                 <label>Username:</label>
-                <input placeholder='Enter your username' className='inputs'/>
+                <input type='text' name='text' placeholder='Enter your username' className='inputs'/>
             </div>
             <div className='form-details flex flex-col'>
                 <label>Email:</label>
-                <input placeholder='Enter your email' className='inputs'/>
+                <input type='email' name='email' placeholder='Enter your email' className='inputs'/>
             </div>
             <div className='form-details flex flex-col'>
                 <label>Phone number:</label>
-                <input placeholder='Enter your phone number' className='inputs'/>
+                <input type='number' name='number' placeholder='Enter your phone number' className='inputs'/>
             </div>
             <div className='form-details flex flex-col'>
                 <label>Password:</label>
-                <input placeholder='Enter your password' className='inputs'/>
+                <input type='password' name='password' placeholder='Enter your password' className='inputs'/>
             </div>
             <div className='save-details'>
                 <input type='checkbox' className='check-input'/>
@@ -34,7 +33,7 @@ function Registration() {
             </div>
         </div>
         <div className='Submit-container '>
-            <button className='submit-btn'>Sign up</button>
+            <button type='submit' className='submit-btn'>Sign up</button>
         </div>
     </div>
   )

@@ -1,11 +1,11 @@
 import React from 'react'
 import Registration from './Registration'
 import Contact from './Contact'
-
+import Login from './Login'
 function Information() {
   return (
-    <div>
-      <Registration/>
+    <div >
+      <Contact/>
       
     </div>
   )

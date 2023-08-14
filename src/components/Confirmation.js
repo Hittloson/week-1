@@ -1,8 +1,11 @@
 import React from 'react'
+import OrderInfo from './OrderInfo'
 
 function Confirmation() {
   return (
-    <div>Confirmation</div>
+    <div>
+      <OrderInfo/>
+    </div>
   )
 }
 

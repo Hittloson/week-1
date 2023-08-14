@@ -91,6 +91,9 @@
     font-weight: bold;
 }
 
-/* Login Form */
-
+/* Payment Method */
+.payment-details{
+    width: 50%;
+    padding: 0.3rem 0.5rem;
+}
 
