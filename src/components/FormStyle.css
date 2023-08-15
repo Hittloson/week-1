@@ -38,6 +38,7 @@
     padding: 0.3rem 0.4rem;
     border-radius: 0.3rem;
     outline: none;
+    background-color: #E5D8EA;
 }
 .save-details{
     padding: 0.3rem 0.5rem;
@@ -95,5 +96,21 @@
 .payment-details{
     width: 50%;
     padding: 0.3rem 0.5rem;
+}
+
+.input-container{
+    background-color: #E5D8EA;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.3rem;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.input-content{
+    color:#596169
+}
+.edit-text{
+    cursor: pointer;
 }
 
