@@ -1,10 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-
-
-
-function Cart() {
+function ApplyCart() {
   return (
     <div className='cart-wrapper'>
         <h2 className='cart-header'>Cart</h2>
@@ -74,8 +71,15 @@ function Cart() {
                 </div>
             </div>
         </div>
+        <div className='cart-apply'>
+            <fieldset>
+                <legend>Promo code</legend>
+                <input type='text' placeholder='Enter Promo code' className='input-apply'/>
+                <button className='apply-btn'>Apply</button>
+            </fieldset>
+        </div>
     </div>
   )
 }
 
-export default Cart
+export default ApplyCart
