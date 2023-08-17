@@ -13,8 +13,6 @@ function Home() {
     <div className='pb-6'>
       <Navbar />
       <ProgressBar/>
-      <Confirmation/>
-      
       
     </div>
   )

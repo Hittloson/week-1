@@ -7,7 +7,7 @@ import Questions from './Questions';
 
 function AboutUs() {
   return (
-    <div className='py-2 md:py-2 '>
+    <div className='about'>
       <Header />
       <Content />
       <About />

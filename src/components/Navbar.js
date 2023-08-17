@@ -5,7 +5,7 @@ import { faSearch, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   return (
-    <div className='  flex flex-wrap justify-between gap-4 md:flex-no-wrap md:justify-between md:items-center md:gap-10 p-4 md:p-6 bg-gray-800 text-white '>
+    <div className='  flex justify-between pt-5 gap-4 md:flex-no-wrap md:justify-between md:items-center md:gap-10 md:p-6 bg-gray-800 text-white '>
       <h2 className='text-2xl  md:text-4xl font-bold'>PerFume</h2>
       <div className=' md:block '>
         <ul className='flex gap-6 '>
