@@ -197,6 +197,62 @@
     font-size: 0.8rem;
     font-weight: bold;
 }
+
+/* Cart for the Payment */
+.cart-apply{
+    /* background-color: #8B499F; */
+   
+}
 fieldset{
-    border: 0.1rem solid #E5D8EA;
+    border: 0.1rem solid #8B499F;
+    border-radius: 0.5rem;
+    padding-bottom: 0.6rem;
+    padding-right:0.6rem ;
+
+
+}
+.input-apply{
+    height: 100%;
+    
+    padding: 0.4rem 1rem;
+    outline: none;
+    background-color: transparent;
+    color: #f1f1f1;
+}
+.apply-btn{
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    background-color:#8B499F;
+    float: right;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+legend{
+    color: #f1f1f1;
+    margin-left: 1.5rem;
+}
+
+/* Cart For Confirmation */
+.cost-summary{
+    padding: 1rem;
+}
+.summary-description{
+    display: flex;
+    justify-content: space-between;
+}
+.summary-title{
+    color: #E5D8EA;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.summary-price{
+    color: #E5D8EA;
+    font-size: 0.8rem;
+    font-weight:600;
+}
+.line{
+    height: 0.3rem;
+    background-color: #E5D8EA;
+    border-radius: 4rem;
+    margin: 0.5rem 0;
 }
