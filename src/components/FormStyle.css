@@ -1,3 +1,15 @@
+/* Information Container */
+.information{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2rem 1rem;
+}  
+.payment{
+    display: flex;
+    justify-content: space-between;
+    
+} 
+
 .form-container{
     /* background-color: aqua; */
     width:50% ;
@@ -117,11 +129,11 @@
 /* Cart section */
 .cart-wrapper{
     
-    width: 50%;
+    width: 45%;
     margin: auto;
     border: 0.2rem solid #8B499F;
     border-radius: 0.7rem;
-    padding: 1.4rem;
+    padding: 1.2rem;
 }
 .cart-header{
     color: #f1f1f1;

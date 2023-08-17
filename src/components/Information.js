@@ -3,12 +3,13 @@ import Registration from './Registration'
 import Contact from './Contact'
 import Login from './Login'
 import Cart from './Cart'
-import ApplyCart from './ApplyCart'
+
 
 function Information() {
   return (
-    <div >
-      <ApplyCart/>
+    <div className='information'>
+      <Contact/>
+      <Cart/>
       
     </div>
   )
