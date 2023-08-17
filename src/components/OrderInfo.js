@@ -34,8 +34,8 @@ function OrderInfo() {
   };
 
   return (
-    <div>
-      <div className='form-container'>
+    <div className='payment-wrapper'>
+      <div >
         <div className='formInput'>
           <div className='form-header'>
             <h2 className='form-title'>Order: #323232</h2>

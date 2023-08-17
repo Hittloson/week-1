@@ -5,8 +5,8 @@ import { faAngleLeft,faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 
 function PaymentMethod() {
   return (
-    <div>
-    <div className='form-container'>
+    <div className='payment-wrapper'>
+    <div className='payment-container'>
     <div className='formInput'>
         <div className='form-header  '>
             <h2 className='form-title '>Payment Method</h2>

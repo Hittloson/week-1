@@ -9,6 +9,11 @@
     justify-content: space-between;
     
 } 
+.confirmation{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2rem 1rem;
+}
 
 .form-container{
     /* background-color: aqua; */
@@ -105,9 +110,21 @@
 }
 
 /* Payment Method */
+.payment-wrapper{
+    width: 50%;
+    margin: auto;
+    padding: 1rem 0.3rem;
+    box-shadow: 3px 3px #1A2530;
+    border-radius: 10px;
+}
+.form-container{
+    width: 50%;
+    margin: auto;
+}
 .payment-details{
     width: 50%;
     padding: 0.3rem 0.5rem;
+    
 }
 
 .input-container{
