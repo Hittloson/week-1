@@ -2,17 +2,15 @@ import React, { useState } from 'react';
 import AboutStyle from './AboutStyle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faStar } from '@fortawesome/free-solid-svg-icons';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 function About() {
-  const [visibleTestimonials, setVisibleTestimonials] = useState(2);
+  
 
-  const showNextTestimonials = () => {
-    setVisibleTestimonials((prevVisible) =>Math.min(prevVisible +2, testimonials.length));
-  };
+  
 
-  const showPreviousTestimonials = () => {
-    setVisibleTestimonials((prevVisible) => Math.max(prevVisible - 2, 2));
-  };
+  
   
 
   // Define the array of testimonials
@@ -63,7 +61,27 @@ const testimonials = [
 ];
 
 
-const testimonialWidth = 100 / visibleTestimonials;
+
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 
   return (
     <div className='About-us About-us p-4 md:p-8'>
@@ -74,47 +92,46 @@ const testimonialWidth = 100 / visibleTestimonials;
         </h2>
 
         <div className='scrol-btn'>
-          <button onClick={showPreviousTestimonials}>
+          <button >
             <FontAwesomeIcon icon={faAngleLeft} />
           </button>
-          <button onClick={showNextTestimonials}>
+          <button >
             <FontAwesomeIcon icon={faAngleRight} />
           </button>
         </div>
       </div>
 
-      <div className='testimony overflow-x-hidden flex transition-transform duration-500 ease-in-out'
-      style={{
-        transform: `translateX(-${(visibleTestimonials - 2) * testimonialWidth}%)`,
-        transition: 'transform 0.5s ease-in-out',
-      }}
       
-      >
 
-        {testimonials.slice(0, visibleTestimonials).map((testimonial, index) => (
-          <div className='testimony-details' key={index}>
-            <div className='image-names-job'>
-              <div className='testimonial-image'>
-                <img src={testimonial.image} alt={`User ${index + 1}`} />
-              </div>
-              <div className='name-job'>
-                <h3>{testimonial.name}</h3>
-                <p>{testimonial.job}</p>
+        
+          <Carousel responsive={responsive}>
+          {testimonials.map((testimonial, index) => (
+            <div key={index}>
+              <div className='testimony-details'>
+                <div className='image-names-job'>
+                  <div className='testimonial-image'>
+                    <img src={testimonial.image} alt={testimonial.name} />
+                  </div>
+                  <div className='name-job'>
+                    <h3>{testimonial.name}</h3>
+                    <p>{testimonial.job}</p>
+                  </div>
+                </div>
+                <div className='description'>
+                  <p>
+                    <center>{testimonial.description}</center>
+                  </p>
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                </div>
               </div>
             </div>
-            <div className='description'>
-              <p>
-                <center>{testimonial.description}</center>
-              </p>
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </Carousel>
+     
     </div>
   );
 }

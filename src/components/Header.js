@@ -6,7 +6,7 @@ import headerStyle from './headerStyle.css'
 
 function Header() {
   return (
-    <div className='header container mx-auto md:p-8'>
+    <div className='header container mx-auto'>
         <Navbar />
         <Hero />
     </div>
